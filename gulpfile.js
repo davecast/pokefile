@@ -40,7 +40,6 @@ var _JAVASCRIPT = [
     'assets/libs/jquery/dist/*.min.*',
     'assets/libs/angular/*.min.*',
     'assets/libs/angular-route/*.min.*',
-    'assets/libs/moment/min/*.min.*',
     'assets/libs/angular-animate/*.min.*',
     'assets/libs/angular-aria/*.min.*',
     'assets/libs/angular-material/angular-material.min.js'
