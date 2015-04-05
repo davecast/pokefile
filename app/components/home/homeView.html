@@ -1,15 +1,15 @@
 
 <section layout="row" layout layout-align="center center">
 	<article>
-		<h1>Bulbasaur #001</h1>
+		<h1>{{pokemons.name}} #{{pokemons.id}}</h1>
 		<h2>Seed Pokemon</h2>
-		<img src="assets/img/pokemons/bulbasaur.jpg">
+		<img src="assets/img/pokemons/{{pokemons.name | lowercase}}.jpg">
 		<h2>Pokedex</h2>
 		<ul>
-			<li><strong>Type:</strong> Grass, Poison</li>
-			<li><strong>Height:</strong> 2'4" (0,71m)</li>
-			<li><strong>Weight:</strong> 15.2 lbs (6.9 kg)</li>
-			<li><strong>Abilities:</strong> Overgrow, Chlorophyll</li>
+			<li><strong>Type:</strong> {{pokemons.type}}</li>
+			<li><strong>Height:</strong>{{pokemons.height}}</li>
+			<li><strong>Weight:</strong>{{pokemons.weight}}</li>
+			<li><strong>Abilities:</strong>{{pokemons.abilities}}</li>
 		</ul>
 	</article>
 </section>
