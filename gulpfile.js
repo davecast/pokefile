@@ -31,13 +31,19 @@ var _STYLUS = 'assets/stylus/**/*.styl';
 
 //Solo las dependencias
 var _CSS = [
-    
+    'assets/libs/mdi/css/**/*.min.*',
+    'assets/libs/angular-material/angular-material.min.css'
 ];
 
 //Solo las dependencias
 var _JAVASCRIPT = [
+    'assets/libs/jquery/dist/*.min.*',
     'assets/libs/angular/*.min.*',
-    'assets/libs/angular-route/*.min.*'
+    'assets/libs/angular-route/*.min.*',
+    'assets/libs/moment/min/*.min.*',
+    'assets/libs/angular-animate/*.min.*',
+    'assets/libs/angular-aria/*.min.*',
+    'assets/libs/angular-material/angular-material.min.js'
 ];
 
 //Todas las fuentes tanto tuyas como de dependencias
