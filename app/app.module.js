@@ -13,6 +13,7 @@
     ];
 
     var _DIRECTIVES = [
+        'headerDirective'
     ];
 
     var _THIRD_PARTY_APPS = [
