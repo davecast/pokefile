@@ -1,7 +1,7 @@
 <header layout="row" >
-    <div class="logo" layout layout-align="start center">
+    <div flex="50" flex-sm="85" class="logo" layout layout-align="start center">
     	<div layout="row">
-    		<div flex="10" layout layout-align="center center">
+    		<div flex="10">
     			<a data-ng-href="#!/" data-ng-click="onClickTab('/home')">
 		            <figure>
 		                <img ng-src="../assets/img/logo.png">   
@@ -11,7 +11,9 @@
     		<div flex class="title" layout layout-align="start center">
     			<strong>PokeFile</strong>
     		</div>
-	    	
     	</div>
+    </div>
+    <div flex hide-sm hide-md layout layout-align="end center">
+        <dc-menuheader></dc-menuheader>
     </div>
 </header>
