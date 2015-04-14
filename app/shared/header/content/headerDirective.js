@@ -1,5 +1,5 @@
 (function(){
-    angular.module('headerDirective', ['menuHeaderDirective','menuHeaderController'])
+    angular.module('headerDirective', ['menuHeaderDirective','menuHeaderController','sidenavRightDirective'])
 
     .directive('dcHeader', function () {
         return {

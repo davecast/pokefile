@@ -47,7 +47,8 @@ var _JAVASCRIPT = [
 
 //Todas las fuentes tanto tuyas como de dependencias
 var _FONTS = [
-
+    'assets/fonts/**/*',
+    'assets/libs/mdi/fonts/**/*'
 ];
 
 //Todas las imagenes tanto tuyas como de dependencias
