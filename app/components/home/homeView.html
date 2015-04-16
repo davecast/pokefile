@@ -1,37 +1,3 @@
-
-<!--<section>
-	<article>
-	<div layout="column">
-		<div flex>
-			<h1>
-				<div layout="row">
-					<div flex>
-						{{pokemons.name}}
-					</div>
-					<div flex>
-						<small>{{pokemons.species}}</small>
-					</div>
-					<div flex="10">
-						#{{pokemons.id}}
-					</div>
-				</div>
-			</h1>
-		</div>
-	</div>
-
-
-		
-		<h2>Seed Pokemon</h2>
-		
-		<h2>Pokedex</h2>
-		<ul>
-			<li><strong>Type:</strong> {{pokemons.type}}</li>
-			<li><strong>Height:</strong>{{pokemons.height}}</li>
-			<li><strong>Weight:</strong>{{pokemons.weight}}</li>
-			<li><strong>Abilities:</strong>{{pokemons.abilities}}</li>
-		</ul>
-	</article>
-</section>-->
 <div layout="row" layout layout-align="center center">
 	<div flex="50" flex-sm="90" flex-md="90">
 		<div layout="column" class="content_home">
@@ -55,36 +21,15 @@
 					<img src="assets/img/pokemons/{{pokemons.name | lowercase}}.jpg">
 				</figure>
 			</div>
-			<div flex class="pokemon_info">
+			<div flex class="pokemon_tab" layout layout-align="center center">
 				<ul>
-					<li>
-						<div layout="row">
-							<div flex="20"><strong>Type:</strong></div>
-							<div flex layout layout-align="end center">{{pokemons.type.join(', ')}}</div>
-						</div>
-					</li>
-					<li>
-						<div layout="row">
-							<div flex="20"><strong>Height:</strong></div>
-							<div flex layout layout-align="end center">{{pokemons.height}}</div>
-						</div>
-						
-					</li>
-					<li>
-						<div layout="row">
-							<div flex="20"><strong>Weight:</strong></div>
-							<div flex layout layout-align="end center">{{pokemons.weight}}</div>
-						</div>
-						
-					</li>
-					<li>
-						<div layout="row">
-							<div flex="20"><strong>Abilities:</strong></div>
-							<div flex layout layout-align="end center">{{pokemons.abilities.join(', ')}}</div>
-						</div>
-						
-					</li>
+					<li data-ng-class="{search_active_tab: isActiveTab(tab.url)}" data-ng-click="onClickTab(tab)" data-ng-repeat="tab in tabs">
+                        {{tab.title}}
+                    </li>
 				</ul>
+			</div>
+			<div flex>
+				<div data-ng-include data-src="getCurrentTab()"></div>
 			</div>
 		</div>
 	</div>
