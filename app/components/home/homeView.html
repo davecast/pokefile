@@ -1,9 +1,28 @@
 
-<section layout="row" layout layout-align="center center">
+<!--<section>
 	<article>
-		<h1>{{pokemons.name}} #{{pokemons.id}}</h1>
+	<div layout="column">
+		<div flex>
+			<h1>
+				<div layout="row">
+					<div flex>
+						{{pokemons.name}}
+					</div>
+					<div flex>
+						<small>{{pokemons.species}}</small>
+					</div>
+					<div flex="10">
+						#{{pokemons.id}}
+					</div>
+				</div>
+			</h1>
+		</div>
+	</div>
+
+
+		
 		<h2>Seed Pokemon</h2>
-		<img src="assets/img/pokemons/{{pokemons.name | lowercase}}.jpg">
+		
 		<h2>Pokedex</h2>
 		<ul>
 			<li><strong>Type:</strong> {{pokemons.type}}</li>
@@ -12,4 +31,61 @@
 			<li><strong>Abilities:</strong>{{pokemons.abilities}}</li>
 		</ul>
 	</article>
-</section>
+</section>-->
+<div layout="row" layout layout-align="center center">
+	<div flex="50" flex-sm="90" flex-md="90">
+		<div layout="column" class="content_home">
+			<div flex class="pokemon_name">
+				<div layout="row">
+					<div flex>
+						<h1>
+							{{pokemons.name}}
+							<small>{{pokemons.species}}</small>
+						</h1>
+					</div>
+					<div flex="10" flex-sm="15" layout layout-align="center center">
+						<div class="idpokemon" layout layout-align="center center">
+							<span><strong>#{{pokemons.id}}</strong></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div flex class="pokemon_picture" layout layout-align="center center">
+				<figure>
+					<img src="assets/img/pokemons/{{pokemons.name | lowercase}}.jpg">
+				</figure>
+			</div>
+			<div flex class="pokemon_info">
+				<ul>
+					<li>
+						<div layout="row">
+							<div flex="20"><strong>Type:</strong></div>
+							<div flex layout layout-align="end center">{{pokemons.type.join(', ')}}</div>
+						</div>
+					</li>
+					<li>
+						<div layout="row">
+							<div flex="20"><strong>Height:</strong></div>
+							<div flex layout layout-align="end center">{{pokemons.height}}</div>
+						</div>
+						
+					</li>
+					<li>
+						<div layout="row">
+							<div flex="20"><strong>Weight:</strong></div>
+							<div flex layout layout-align="end center">{{pokemons.weight}}</div>
+						</div>
+						
+					</li>
+					<li>
+						<div layout="row">
+							<div flex="20"><strong>Abilities:</strong></div>
+							<div flex layout layout-align="end center">{{pokemons.abilities.join(', ')}}</div>
+						</div>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
