@@ -6,22 +6,21 @@ angular.module('homeService', [])
       var tab = [
          {
             'title': 'Pokedex',
-            'url': '../templates/hometabview/pokedexView.min.html'
+            'url': '../templates/home/hometabview/pokedexView.min.html'
          },
          {
             'title': 'Stats',
-            'url': '../templates/hometabview/statView.min.html'
+            'url': '../templates/home/hometabview/statView.min.html'
          },
          {
             'title': 'Evolutions',
-            'url': '../templates/hometabview/evolutionsView.min.html'
+            'url': '../templates/home/hometabview/evolutionsView.min.html'
          }
       ];
 
       var currentTab = tab[0].url;
 
       function onClickTab(tab) {
-         console.log('tab')
          currentTab = tab.url;
       }
 
