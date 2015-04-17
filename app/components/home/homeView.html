@@ -30,7 +30,7 @@
 				            </li>
 						</ul>
 					</div>
-					<div flex>
+					<div flex data-ng-controller="commentsController"> 
 						<dc-comments></dc-comments>
 					</div>
 				</div>
@@ -40,9 +40,7 @@
 	<div flex="50" flex-sm="100" flex-md="100" class="content_home">
 		<div layout="row" layout layout-align="center center">
 			<div flex="90">
-				<div flex>
-					<div data-ng-include data-src="getCurrentTab()"></div>
-				</div>
+				<div data-ng-include data-src="getCurrentTab()"></div>
 			</div>
 		</div>
 	</div>
