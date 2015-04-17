@@ -14,9 +14,12 @@
     }]).controller('commentsController', [ 
     '$scope', 'commentsFactory',
     function ($scope, commentsFactory) {
+        $comments = [];
+        $scope.showComment = false;
 
-        $scope.prueba = commentsFactory.prueba;
-        console.log($scope.prueba);
+        $scope.showComments =  function(){
+            $scope.showComment = !$scope.showComment;
+        };
     }]);
 
 })();

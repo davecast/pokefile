@@ -1,16 +1,40 @@
 <div layout="column" class="comments">
-	<div flex class="comments_botonbox">
-		<div class="boton" layout layout-align="center center">
+	<div flex class="comments_botonbox" data-ng-if="!showComment">
+		<div class="boton" layout layout-align="center center" data-ng-click="showComments()">
 			Show comments <span>3</span>
 		</div>
 	</div>
 	<div flex class="comments_content">
 		<div layout="column">
-			<div flex>comment</div>
-			<div flex>quien</div>
-			<div flex>annonimus</div>
-			<div flex>comentar</div>
-			<div flex>comments</div>
+			<div flex>
+				<div layout="row" class="title">
+					<div flex="40" layout layout-align="start center">
+						<span>Comments</span>
+					</div>
+					<div flex layout layout-align="end center">
+						<div class="icon" layout layout-align="center center" data-ng-click="showComments()"><i class="mdi mdi-close"></i></div>
+					</div>
+				</div>
+			</div>
+			<div layout="row" layout layout-align="center center">
+				<div flex="90">
+					<div flex>
+						<textarea rows="4" cols="50" class="comment" placeholder="Place your comment here" required></textarea>
+					</div>
+					<div flex>
+						<input class="email" type="email" placeholder="Place your email here" required />	
+					</div>
+					<div flex layout layout-align="start center" class="checkbox">
+						<input type="checkbox" /> <span>Anonymous</span>	
+					</div>
+					<div flex>
+						<div class="boton" layout layout-align="center center">
+							Comment
+						</div>
+					</div>
+					<div flex>comments</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
