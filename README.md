@@ -15,7 +15,7 @@ Based on this project
 
 Usign 
 
-* [Formatcom baseAngularJS](https://github.com/formatcom/baseAngularjs)
+* [FormatCom baseAngularJS](https://github.com/formatCom/baseAngularjs)
 
 This site was built entirely for education purposes only.
 
@@ -27,7 +27,7 @@ Basado en este proyecto
 
 Usando
 
-* [Formatcom baseAngularJS](https://github.com/formatcom/baseAngularjs)
+* [FormatCom baseAngularJS](https://github.com/formatcom/baseAngularjs)
 
 Este sitio fue construido en su totalidad con fines educativos solamente.
 
