@@ -1,5 +1,5 @@
 (function(){
-    angular.module('homeController', ['homeService'])
+    angular.module('homeController', ['homeService','commentsDirective'])
 
     .controller('homeController', [ 
     '$scope', 'homeFactory',
