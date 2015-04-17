@@ -1,10 +1,9 @@
 (function(){
-    angular.module('commentsDirective', ['commentsController'])
+    angular.module('commentsDirective', [])
 
     .directive('dcComments', function () {
         return {
             restrict: 'E',
-            controller: 'commentsController',
             templateUrl: '../templates/comments/commentsView.min.html'
         };
     });
