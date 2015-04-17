@@ -1,5 +1,5 @@
 (function(){
-    angular.module('homeController', ['homeService','commentsDirective'])
+    angular.module('homeController', ['homeService','commentsDirective','commentsService'])
 
     .controller('homeController', [ 
     '$scope', 'homeFactory',
@@ -11,6 +11,12 @@
         $scope.isActiveTab = homeFactory.isActiveTab;
         $scope.getCurrentTab = homeFactory.getCurrentTab;
       
+    }]).controller('commentsController', [ 
+    '$scope', 'commentsFactory',
+    function ($scope, commentsFactory) {
+
+        $scope.prueba = commentsFactory.prueba;
+        console.log($scope.prueba);
     }]);
 
 })();
