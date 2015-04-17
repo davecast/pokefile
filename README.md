@@ -8,7 +8,7 @@ Proyecto simple creado con HTML5, CSS3, Stylus, AngularJS, MaterialDesign, Mater
 
 ### Project
 	
-# INGLES
+### INGLES
 
 Based on this project
 * [MejorandolaPokedex](https://github.com/proyectos-mejorandola/pokedex)
@@ -19,7 +19,7 @@ Usign
 
 This site was built entirely for education purposes only.
 
-# ESPAÑOL
+### ESPAÑOL
 
 Basado en este proyecto
 
@@ -33,7 +33,7 @@ Este sitio fue construido en su totalidad con fines educativos solamente.
 
 ### Pokémon
 
-# INGLES
+### INGLES
 
 Pokémon images, names and information (c) 1995-2014 Nintendo/Game freak.
 
@@ -52,7 +52,7 @@ intellectual property for a fan reference is covered by fair use and that the
 software is significantly impaired without said property included.  Any use of
 this copyrighted property is at your own legal risk.
 
-# ESPAÑOL
+### ESPAÑOL
 
 Imágenes de Pokémon, nombres e información (c) 1995-2014 Nintendo monstruo / Juego.
 
@@ -73,7 +73,7 @@ esta propiedad con derechos de autor es a su propio riesgo legal.
 
 ### Code: The MIT License (MIT)
 	
-# INGLES
+### INGLES
 
 Copyright (c) 2015 David Castillo
 
@@ -95,7 +95,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-# ESPAÑOL
+### ESPAÑOL
 
 Derechos de autor (c) 2015 David Castillo, 
 
