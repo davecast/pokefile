@@ -1,5 +1,6 @@
 (function(){
-    angular.module('homeController', ['homeService','commentsDirective','commentsService'])
+    angular.module('homeController', ['homeService','commentsDirective','commentsService','pokemonNameDirective',
+        'pokemonPictureDirective','pokemonTabsDirective'])
 
     .controller('homeController', [ 
     '$scope', 'homeFactory',
