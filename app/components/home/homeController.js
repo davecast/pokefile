@@ -14,11 +14,11 @@
     }]).controller('commentsController', [ 
     '$scope', 'commentsFactory',
     function ($scope, commentsFactory) {
-        $comments = [];
-        $scope.showComment = false;
+        $scope.comments = [];
+        $scope.show = false;
 
-        $scope.showComments =  function(){
-            $scope.showComment = !$scope.showComment;
+        $scope.toggle =  function(){
+            $scope.show = !$scope.show;
         };
     }]);
 
