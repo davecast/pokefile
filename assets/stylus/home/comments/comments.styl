@@ -61,6 +61,12 @@
 			font-size 1em
 			resize none
 			word-wrap break-word
+		.ng-invalid
+			.ng-dirty
+				border-color rojo
+		.ng-valid
+			.ng-dirty
+				border-color green
 		.email
 			margin-top 1.25em
 			padding-left 10px
@@ -78,6 +84,8 @@
 				margin-left 0.5em
 				color gris
 		.boton
+			appearance none
+			border none
 			margin-bottom 1.25em
 			cursor pointer
 			margin-top 0.3em
@@ -92,26 +100,28 @@
 				opacity 0.5
 		.comment_body
 			margin-bottom 1.25em
-			.border_comment
-				border-left 0.4em solid rgba(separator,0.3)
-			.body
-				color separator
-				font-size 1.3em
-				word-wrap break-word
-			.text
-				color separator
-				font-size 0.8em
-				word-wrap break-word
-				p
-					margin 0
-					padding 0
-				a
-					&:link
-						color rojo
-						text-decoration none
-					&:active
-						color rojo
-						text-decoration none
-					&:visited
-						color rojo
-						text-decoration none 
+			.item
+				margin-bottom 1.25em
+				.border_comment
+					border-left 0.4em solid rgba(separator,0.3)
+				.body
+					color separator
+					font-size 1.3em
+					word-wrap break-word
+				.text
+					color separator
+					font-size 0.8em
+					word-wrap break-word
+					p
+						margin 0
+						padding 0
+					a
+						&:link
+							color rojo
+							text-decoration none
+						&:active
+							color rojo
+							text-decoration none
+						&:visited
+							color rojo
+							text-decoration none
