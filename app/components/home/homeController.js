@@ -15,10 +15,23 @@
     '$scope', 'commentsFactory',
     function ($scope, commentsFactory) {
         $scope.comments = [];
+        $scope.comment = {};
         $scope.show = false;
 
         $scope.toggle =  function(){
             $scope.show = !$scope.show;
+        };
+
+        $scope.anonymousChnged =  function(){
+            if($scope.comment.anonymous){
+                $scope.comment.email = "";  
+            }
+        };
+
+        $scope.addComment = function(){
+            $scope.comment.date = Date.now();
+            $scope.comments.push($scope.comment);
+            $scope.comment = {};
         };
     }]);
 
