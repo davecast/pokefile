@@ -9,13 +9,13 @@
             controller: 'homeController'
         })
         .when('/pokemons', {
-            template: 'pokemon list'
+            templateUrl: '../templates/pokemons/pokemons.min.html',
         })
         .when('/pokemons/view', {
-            template: 'pokemon view'
+            templateUrl: '../templates/pokemons/pokemons.min.html',
         })
         .when('/contact', {
-            template: 'contact'
+            templateUrl: '../templates/contact/contact.min.html',
         })
         .otherwise({
             redirectTo: '/home'
