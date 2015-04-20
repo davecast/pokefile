@@ -1,0 +1,53 @@
+<div flex class="stats">
+	<div layout="column">
+		<div flex class="title">
+			<span><strong>Stats</strong></span>
+		</div>
+		<div flex>
+			<ul>
+				<li>
+					<div layout="row">
+						<div flex="30" flex-sm="30" flex-md="40"><strong>Hp</strong></div>
+						<div flex layout layout-align="end center" class="pokemon_stats"><span>{{pokemons.stats.hp}}</span></div>
+					</div>
+				</li>
+				<li>
+					<div layout="row">
+						<div flex="30" flex-sm="30" flex-md="40"><strong>Attack</strong></div>
+						<div flex layout layout-align="end center" class="pokemon_stats"><span>{{pokemons.stats.attack}}</span></div>
+					</div>
+				</li>
+				<li>
+					<div layout="row">
+						<div flex="30" flex-sm="30" flex-md="40"><strong>Defense</strong></div>
+						<div flex layout layout-align="end center" class="pokemon_stats"><span>{{pokemons.stats.defense}}</span></div>
+					</div>
+				</li>
+				<li>
+					<div layout="row">
+						<div flex="30" flex-sm="30" flex-md="40"><strong>Special Attack</strong></div>
+						<div flex layout layout-align="end center" class="pokemon_stats"><span>{{pokemons.stats['sp.atk']}}</span></div>
+					</div>
+				</li>
+				<li>
+					<div layout="row">
+						<div flex="30" flex-sm="30" flex-md="40"><strong>Special Defense</strong></div>
+						<div flex layout layout-align="end center" class="pokemon_stats"><span>{{pokemons.stats['sp.def']}}</span></div>
+					</div>
+				</li>
+				<li>
+					<div layout="row">
+						<div flex="30" flex-sm="30" flex-md="40"><strong>Speed</strong></div>
+						<div flex layout layout-align="end center" class="pokemon_stats"><span>{{pokemons.stats.speed}}</span></div>
+					</div>
+				</li>
+				<li>
+					<div layout="row">
+						<div flex="30" flex-sm="30" flex-md="40"><strong>Total</strong></div>
+						<div flex layout layout-align="end center" class="pokemon_stats"><span>{{pokemons.stats.total}}</span></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

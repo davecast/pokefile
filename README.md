@@ -15,11 +15,7 @@ Based on this project
 
 Usign 
 
-<<<<<<< HEAD
 * [FormatCom baseAngularJS](https://github.com/formatCom/baseAngularjs)
-=======
-* [FormatCom baseAngularJS](https://github.com/formatcom/baseAngularjs)
->>>>>>> 4730beb8042a9549ac318e92fdb27fbc80147ea8
 
 This site was built entirely for education purposes only.
 
