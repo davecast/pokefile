@@ -6,8 +6,12 @@
 
             tabs=[
                 {
-                    'title': 'POKEMONES',
+                    'title': 'HOME',
                     'url': '/home'
+                },
+                {
+                    'title': 'POKEMONES',
+                    'url': '/pokemons'
                 },
                 {
                     'title':'CONTACTENOS',
