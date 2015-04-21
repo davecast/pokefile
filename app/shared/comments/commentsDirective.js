@@ -4,7 +4,7 @@
     .directive('dcComments', function () {
         return {
             restrict: 'E',
-            templateUrl: '../templates/comments/commentsView.min.html'
+            templateUrl: 'templates/comments/commentsView.min.html'
         };
     });
 

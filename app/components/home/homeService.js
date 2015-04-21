@@ -6,15 +6,15 @@ angular.module('homeService', [])
       var tab = [
          {
             'title': 'Pokedex',
-            'url': '../templates/home/hometabview/pokedexView.min.html'
+            'url': 'templates/home/hometabview/pokedexView.min.html'
          },
          {
             'title': 'Stats',
-            'url': '../templates/home/hometabview/statView.min.html'
+            'url': 'templates/home/hometabview/statView.min.html'
          },
          {
             'title': 'Evolutions',
-            'url': '../templates/home/hometabview/evolutionsView.min.html'
+            'url': 'templates/home/hometabview/evolutionsView.min.html'
          }
       ];
 

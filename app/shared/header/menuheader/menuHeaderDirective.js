@@ -4,7 +4,7 @@
     .directive('dcMenuheader', function () {
         return {
             restrict: 'E',
-            templateUrl: '../templates/header/menuheader/menuHeaderView.min.html'
+            templateUrl: 'templates/header/menuheader/menuHeaderView.min.html'
         };
     });
 

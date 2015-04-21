@@ -5,7 +5,7 @@
         return {
             restrict: 'E',
             controller: 'menuHeaderController',
-            templateUrl: '../templates/header/content/headerView.min.html'
+            templateUrl: 'templates/header/content/headerView.min.html'
         };
     });
 
