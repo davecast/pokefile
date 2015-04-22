@@ -9,7 +9,8 @@
     ];
 
     var _CONTROLLERS = [
-        'homeController'
+        'homeController',
+        'pokemonsController'
     ];
 
     var _DIRECTIVES = [

@@ -22,6 +22,10 @@ var _PROYECTOJS = [
     'assets/js/**/*.js'
 ];
 
+var _JSON = [
+    'assets/json/*.json'
+];
+
 var _HTML = [
     'app/shared/**/*.html', 
     'app/components/**/*.html'
@@ -120,6 +124,10 @@ gulp.task('copyFonts', function(){
     .pipe(gulp.dest('dist/assets/fonts'));
 });
 
+gulp.task('copyJson', function(){
+    gulp.src(_JSON)
+    .pipe(gulp.dest('dist/assets/json'));
+});
 
 gulp.task('watch', function() {
     // Cambios principales
@@ -143,7 +151,7 @@ gulp.task('debug', function() {
 });
 
 gulp.task('dist', ['clean'], function() {
-    gulp.start('copyBase', 'copyCss', 'copyJs', 'copyImgs', 'copyFonts', 'minify-css', 'minify-html', 'minify-js', 'lint');
+    gulp.start('copyBase', 'copyCss', 'copyJs', 'copyImgs', 'copyFonts', 'copyJson', 'minify-css', 'minify-html', 'minify-js', 'lint');
 });
 
 gulp.task('server', function() {

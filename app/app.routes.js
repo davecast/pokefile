@@ -9,7 +9,8 @@
             controller: 'homeController'
         })
         .when('/pokemons', {
-            templateUrl: '../templates/pokemons/pokemons.min.html',
+            templateUrl: '../templates/pokemons/pokemonsView.min.html',
+            controller: 'pokemonsController'
         })
         .when('/pokemons/view', {
             templateUrl: '../templates/pokemons/pokemons.min.html',
