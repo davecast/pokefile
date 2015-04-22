@@ -1,0 +1,28 @@
+<div layout="row" layout-sm="column" layout-md="column" layout-wrap class="pokemons">
+	<div flex flex-sm="100" flex-md="100" class="pokemons">
+		<div layout="column">
+			<div flex>
+				Pokemons list
+			</div>
+			<div flex>
+				<div layout="row" layout-wrap layout layout-align="center center">
+					<div flex="30" data-ng-repeat="pokemons in pokemonsinfo">
+						<div layout="row" layout layout-align="center center">
+							<div flex="90">
+								<div layout="column">
+									<div flex>
+										<dc-pokemonname></dc-pokemonname>
+									</div>
+									<div flex>
+										<dc-pokemonpicture></dc-pokemonpicture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+</div>
