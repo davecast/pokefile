@@ -1,5 +1,6 @@
 <div flex class="pokemon_picture" layout layout-align="center center">
 	<figure>
-		<img ng-src="assets/img/pokemons/{{pokemons.name | lowercase}}.jpg">
+		<!--<img ng-src="pokemons.name | imageGet}}">-->
+		<img ng-src="{{pokemons.name | normalize | imgGet}}">
 	</figure>
 </div>

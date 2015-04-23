@@ -18,6 +18,10 @@
         'titlePagesDirective'
     ];
 
+    var _FILTERS = [
+        'pokemonsPictureFilters'
+    ];
+
     var _THIRD_PARTY_APPS = [
         'ngMaterial'
     ]; 
@@ -25,6 +29,7 @@
 
     var _DEPENDENCIES = _SERVICES.concat(_CONTROLLERS); 
         _DEPENDENCIES = _DEPENDENCIES.concat(_DIRECTIVES);
+        _DEPENDENCIES = _DEPENDENCIES.concat(_FILTERS);
         _DEPENDENCIES = _DEPENDENCIES.concat(_THIRD_PARTY_APPS);
         _DEPENDENCIES = _DEPENDENCIES.concat(['routes']);
 
