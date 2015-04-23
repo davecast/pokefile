@@ -1,2 +1,39 @@
 .pokemons
-	margin-top 3em
+	.content_pokemons
+		.pokemon_item
+			border 1px solid transparent
+			margin-bottom 1em
+			&:hover
+				cursor pointer
+				border 1px solid separator
+				border-radius 4px
+				opacity 0.7
+			&:active
+				opacity 0.8
+			.pokemon_name
+				margin-bottom 1.25em
+				border-bottom 1px solid separator
+				h1
+					margin 0
+					padding 0.31em 0em
+					small
+						color typePokemon
+						font-size .7em
+				.idpokemon
+					width 4em
+					margin-bottom 15px
+					padding 0em 0.31em
+					border-radius 0.25em
+					background rojo
+					span
+						color blanco
+						font-size 1.3em
+			.pokemon_picture
+				margin-bottom 0.7em
+				border-bottom 1px solid separator
+				figure
+					width 250px
+					height 200px
+					img
+						width 250px
+						height 200px

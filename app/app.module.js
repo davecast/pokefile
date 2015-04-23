@@ -14,7 +14,8 @@
     ];
 
     var _DIRECTIVES = [
-        'headerDirective'
+        'headerDirective',
+        'titlePagesDirective'
     ];
 
     var _THIRD_PARTY_APPS = [
