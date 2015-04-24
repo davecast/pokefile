@@ -2,20 +2,22 @@
 <div layout="row" class="pokemons" layout-align="center center">
 	<div flex="100" flex-sm="100" flex-md="100" class="pokemons">
 		<div layout="row" layout-wrap layout layout-align="center center" class="content_pokemons">
-			<div flex="30" flex-sm="90" flex-md="50" data-ng-repeat="pokemons in pokemonsinfo" class="pokemon_item">
+			<div flex="30" flex-sm="90" flex-md="50" data-ng-repeat="pokemons in allPokemons">
 				<div layout="row" layout layout-align="center center">
-					<div flex="90">
-						<div layout="column">
-							<div flex>
-								<dc-pokemonname></dc-pokemonname>
+					<div flex="90" class="pokemon_item">
+						<a href="#!/pokemons/dawd">
+							<div layout="column">
+								<div flex>
+									<dc-pokemonname></dc-pokemonname>
+								</div>
+								<div flex>
+									<dc-pokemonpicture></dc-pokemonpicture>
+								</div>
+								<div flex>
+									<dc-pokemontype></dc-pokemontype>
+								</div>
 							</div>
-							<div flex>
-								<dc-pokemonpicture></dc-pokemonpicture>
-							</div>
-							<div flex>
-								<dc-pokemontype></dc-pokemontype>
-							</div>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>

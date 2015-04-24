@@ -5,7 +5,7 @@
     .controller('pokeViewController', [ 
     '$scope', 'pokeViewFactory', '$location',
     function ($scope, pokeViewFactory,  $location) {
-    	
+    	$scope.typeViewTitle = 'PokemonView';
     	$scope.tabs = pokeViewFactory.tab;
         $scope.pokemons = pokeViewFactory.pokemons;
         $scope.onClickTab = pokeViewFactory.onClickTab;
