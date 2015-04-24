@@ -1,5 +1,5 @@
 (function(){
-    angular.module('pokemonsController', ['pokemonsService','pokemonNameDirective','pokemonPictureDirective'])
+    angular.module('pokemonsController', ['pokemonsService','pokemonNameDirective','pokemonPictureDirective','pokemonTypeDirective'])
 
     .controller('pokemonsController', [ 
     '$scope', 'pokemonsFactory', '$http',
@@ -12,5 +12,4 @@
             });
       
     }]);
-
 })();

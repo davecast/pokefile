@@ -1,11 +1,11 @@
 (function(){
     angular.module('pokemonsPictureFilters', [])
-	.filter('imgGet', function() {
+	.filter('imgGet', ['$filter', function($filter) {
 		return function(input) {
-			var url = "assets/img/pokemons/" + input.toLowerCase() + '.jpg';
+			var url = "assets/img/pokemons/" + $filter('normalize')(input) + '.jpg';
 			return url;
 		};
-	}).filter('normalize', function() {
+	}]).filter('normalize', function() {
 		return function(input) {
 			input = input
 					.replace('♀', 'f')

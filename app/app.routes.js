@@ -5,13 +5,13 @@
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         
         $routeProvider.when('/home', {
-            template: 'home'
+            templateUrl: 'templates/home/homeView.min.html'
         }).when('/pokemons', {
             templateUrl: 'templates/pokemons/pokemonsView.min.html',
             controller: 'pokemonsController'
         }).when('/pokemons/:id', {
             templateUrl: 'templates/pokeview/pokeView.min.html',
-            controller: 'pokeviewController'
+            controller: 'pokeViewController'
         })
         .when('/contact', {
             templateUrl: 'templates/contact/contact.min.html',
