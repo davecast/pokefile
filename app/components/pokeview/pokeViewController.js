@@ -1,16 +1,16 @@
 (function(){
-    angular.module('homeController', ['homeService','commentsDirective','commentsService','pokemonNameDirective',
+    angular.module('pokeViewController', ['pokeViewService','commentsDirective','commentsService','pokemonNameDirective',
         'pokemonPictureDirective','pokemonTabsDirective'])
 
-    .controller('homeController', [ 
-    '$scope', 'homeFactory', '$location',
-    function ($scope, homeFactory,  $location) {
+    .controller('pokeViewController', [ 
+    '$scope', 'pokeViewFactory', '$location',
+    function ($scope, pokeViewFactory,  $location) {
     	
-    	$scope.tabs = homeFactory.tab;
-        $scope.pokemons = homeFactory.pokemons;
-        $scope.onClickTab = homeFactory.onClickTab;
-        $scope.isActiveTab = homeFactory.isActiveTab;
-        $scope.getCurrentTab = homeFactory.getCurrentTab;
+    	$scope.tabs = pokeViewFactory.tab;
+        $scope.pokemons = pokeViewFactory.pokemons;
+        $scope.onClickTab = pokeViewFactory.onClickTab;
+        $scope.isActiveTab = pokeViewFactory.isActiveTab;
+        $scope.getCurrentTab = pokeViewFactory.getCurrentTab;
         
     }]).controller('commentsController', [ 
     '$scope', 'commentsFactory',

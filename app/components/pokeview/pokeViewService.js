@@ -1,20 +1,20 @@
-angular.module('homeService', [])
+angular.module('pokeViewService', [])
 
-   .factory('homeFactory', ['$http', '$q', 'api',
+   .factory('pokeViewFactory', ['$http', '$q', 'api',
    function ($http, $q, api){
       
       var tab = [
          {
             'title': 'Pokedex',
-            'url': 'templates/home/hometabview/pokedexView.min.html'
+            'url': 'templates/pokeview/pokeviewtabview/pokedexView.min.html'
          },
          {
             'title': 'Stats',
-            'url': 'templates/home/hometabview/statView.min.html'
+            'url': 'templates/pokeview/pokeviewtabview/statView.min.html'
          },
          {
             'title': 'Evolutions',
-            'url': 'templates/home/hometabview/evolutionsView.min.html'
+            'url': 'templates/pokeview/pokeviewtabview/evolutionsView.min.html'
          }
       ];
 

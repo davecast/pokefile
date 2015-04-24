@@ -5,18 +5,16 @@
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         
         $routeProvider.when('/home', {
-            templateUrl: '../templates/home/homeView.min.html',
-            controller: 'homeController'
-        })
-        .when('/pokemons', {
-            templateUrl: '../templates/pokemons/pokemonsView.min.html',
+            template: 'home'
+        }).when('/pokemons', {
+            templateUrl: 'templates/pokemons/pokemonsView.min.html',
             controller: 'pokemonsController'
-        })
-        .when('/pokemons/view', {
-            templateUrl: '../templates/pokemons/pokemons.min.html',
+        }).when('/pokemons/:id', {
+            templateUrl: 'templates/pokeview/pokeView.min.html',
+            controller: 'pokeviewController'
         })
         .when('/contact', {
-            templateUrl: '../templates/contact/contact.min.html',
+            templateUrl: 'templates/contact/contact.min.html',
         })
         .otherwise({
             redirectTo: '/home'

@@ -9,7 +9,7 @@
     ];
 
     var _CONTROLLERS = [
-        'homeController',
+        'pokeViewController',
         'pokemonsController'
     ];
 
