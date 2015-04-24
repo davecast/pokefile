@@ -4,7 +4,7 @@
     .directive('dcPokemonpicture', function () {
         return {
             restrict: 'E',
-            templateUrl: 'templates/home/pokemonpicture/pokemonPictureView.min.html'
+            templateUrl: 'templates/pokemonpicture/pokemonPictureView.min.html'
         };
     });
 

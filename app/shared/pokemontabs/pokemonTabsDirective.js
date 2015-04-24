@@ -4,7 +4,7 @@
     .directive('dcPokemontabs', function () {
         return {
             restrict: 'E',
-            templateUrl: 'templates/home/pokemontabs/pokemonTabsView.min.html'
+            templateUrl: 'templates/pokemontabs/pokemonTabsView.min.html'
         };
     });
 
