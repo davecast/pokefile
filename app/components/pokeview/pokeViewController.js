@@ -3,14 +3,25 @@
         'pokemonPictureDirective','pokemonTabsDirective'])
 
     .controller('pokeViewController', [ 
-    '$scope', 'pokeViewFactory', '$location',
-    function ($scope, pokeViewFactory,  $location) {
-    	$scope.typeViewTitle = 'PokemonView';
-    	$scope.tabs = pokeViewFactory.tab;
-        $scope.pokemons = pokeViewFactory.pokemons;
-        $scope.onClickTab = pokeViewFactory.onClickTab;
-        $scope.isActiveTab = pokeViewFactory.isActiveTab;
-        $scope.getCurrentTab = pokeViewFactory.getCurrentTab;
+    '$scope', 'pokeViewFactory', '$location', '$routeParams', '$filter',
+    function ($scope, pokeViewFactory,  $location, $routeParams, $filter) {
+
+    var filtro = $filter('imgGet');
+    $scope.typeViewPicture = 'individual';
+    $scope.getPokemon = function(){
+        pokeViewFactory.byId($routeParams.id).then(function(data){
+            $scope.pokemons = data;
+            $scope.pic = filtro($scope.pokemons.name);
+        });
+    };
+    $scope.getPokemon();
+
+	$scope.typeViewTitle = 'PokemonView';
+
+	$scope.tabs = pokeViewFactory.tab;
+    $scope.onClickTab = pokeViewFactory.onClickTab;
+    $scope.isActiveTab = pokeViewFactory.isActiveTab;
+    $scope.getCurrentTab = pokeViewFactory.getCurrentTab;
         
     }]).controller('commentsController', [ 
     '$scope', 'commentsFactory',
