@@ -32,38 +32,40 @@ angular.module('pokeViewService', [])
          return currentTab;
       }
 
-      var pokemons = {
-          "id": "001",
-          "name": "Bulbasaur",
-          "species": "Seed Pokémon",
-          "type": [
-            "Grass",
-            "Poison"
-          ],
-          "height": "2′4″ (0.71m)",
-          "weight": "15.2 lbs (6.9 kg)",
-          "abilities": [
-            "Overgrow",
-            "Chlorophyll"
-          ],
-          "stats": {
-            "hp": 45,
-            "attack": 49,
-            "defense": 49,
-            "sp.atk": 65,
-            "sp.def": 65,
-            "speed": 45,
-            "total": 318
-          },
-          "evolution": [
-            "Bulbasaur",
-            "Ivysaur",
-            "Venusaur"
-          ]
-      };
+      function all(){
+        var deferred = $q.defer();
+
+        $http.get('assets/json/pokemons.json')
+          .success(function (data) {
+              deferred.resolve(data);
+          })
+          .error(function(data) {
+          });
+
+          return deferred.promise;
+      }
+
+      function byId(id){
+        var deferred = $q.defer();
+
+        all().then(function(data){
+          var results = data.filter(function(pokemon){
+            return pokemon.id === id;
+          });
+
+          if (results.length > 0) {
+            deferred.resolve(results[0]);
+          }else{
+            deferred.reject();
+          }
+
+        });
+        
+        return deferred.promise;
+      }
 
       return {
-         pokemons: pokemons,
+         byId:  byId,
          tab: tab,
          onClickTab: onClickTab,
          isActiveTab: isActiveTab,
