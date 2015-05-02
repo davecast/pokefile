@@ -9,7 +9,7 @@
         }).when('/pokemons', {
             templateUrl: 'templates/pokemons/pokemonsView.min.html',
             controller: 'pokemonsController'
-        }).when('/pokemons/:id', {
+        }).when('/pokemons/:name', {
             templateUrl: 'templates/pokeview/pokeView.min.html',
             controller: 'pokeViewController'
         })
