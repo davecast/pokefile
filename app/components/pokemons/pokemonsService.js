@@ -16,7 +16,25 @@ angular.module('pokemonsService', [])
             return deferred.promise;
       	}
          
+        function byType(type){
+          var deferred = $q.defer();
+
+            all().then(function(data){
+            var results = data.filter(function(pokemon){
+              return pokemon.type.some(function(t){
+                return t === type;
+              });
+
+            });
+            
+            deferred.resolve(results);
+          });
+           
+          return deferred.promise;
+        }
+
 		return {
-			all: all
+			all: all,
+      byType:byType
 		};
 }]);
