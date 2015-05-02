@@ -15,23 +15,7 @@ angular.module('pokemonsService', [])
 
             return deferred.promise;
       	}
-
-         function Byid(id){
-            var deferred = $q.defer();
-
-            all().then(function(data){
-               var results = data.filter(function(pokemon){
-                  return pokemon.id === id;
-               });
-            });
-
-            if (results.length > 0) {
-               deferred.resolve(results[0]);
-            }else{
-               deferred.reject();
-            }
-            return deferred.promise;
-         }
+         
 		return {
 			all: all
 		};
