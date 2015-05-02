@@ -9,7 +9,7 @@
     var filtro = $filter('imgGet');
     $scope.typeViewPicture = 'individual';
     $scope.getPokemon = function(){
-        pokeViewFactory.byId($routeParams.id).then(function(data){
+        pokeViewFactory.byName($routeParams.name).then(function(data){
             $scope.pokemons = data;
             $scope.pic = filtro($scope.pokemons.name);
         });
