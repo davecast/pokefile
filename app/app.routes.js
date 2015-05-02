@@ -12,6 +12,9 @@
         }).when('/pokemons/:name', {
             templateUrl: 'templates/pokeview/pokeView.min.html',
             controller: 'pokeViewController'
+        }).when('/:type', {
+            templateUrl: 'templates/pokemons/pokemonsView.min.html',
+            controller: 'pokemonsController'
         })
         .when('/contact', {
             templateUrl: 'templates/contact/contact.min.html',
