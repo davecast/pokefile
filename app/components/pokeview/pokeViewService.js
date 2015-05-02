@@ -45,12 +45,12 @@ angular.module('pokeViewService', [])
           return deferred.promise;
       }
 
-      function byId(id){
+      function byName(name){
         var deferred = $q.defer();
 
         all().then(function(data){
           var results = data.filter(function(pokemon){
-            return pokemon.id === id;
+            return pokemon.name === name;
           });
 
           if (results.length > 0) {
@@ -65,7 +65,7 @@ angular.module('pokeViewService', [])
       }
 
       return {
-         byId:  byId,
+         byName:  byName,
          tab: tab,
          onClickTab: onClickTab,
          isActiveTab: isActiveTab,
