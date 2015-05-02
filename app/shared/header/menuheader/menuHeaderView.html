@@ -1,9 +1,10 @@
 <div class="menu">
 	<ul>
-    	<li class="tab_items" data-ng-repeat="tab in tabs">
-    		<a data-ng-href="#!{{tab.url}}" data-ng-class="{menu_active_tab: isActiveTab(tab.url)}" data-ng-click="onClickTab(tab.url)">
+    	<li class="tab_items" data-ng-repeat="tab in tabs" data-ng-class="{menu_active_tab: isActiveTab(tab.url)}">
+    		<a data-ng-href="#!{{tab.url}}" data-ng-click="onClickTab(tab.url)">
     			{{tab.title}}
     		</a>
+    		<div class="circle"></div>
     	</li>
     </ul> 
 </div>

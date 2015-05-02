@@ -10,11 +10,11 @@
                     'url': '/home'
                 },
                 {
-                    'title': 'POKEMONES',
+                    'title': 'POKEMONS',
                     'url': '/pokemons'
                 },
                 {
-                    'title':'CONTACTENOS',
+                    'title':'CONTACT',
                     'url': '/contact'
                 }
             ];
