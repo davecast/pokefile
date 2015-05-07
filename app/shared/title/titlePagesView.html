@@ -9,7 +9,9 @@
 	<div ng-switch-when="pokemons">
 		<div layout="row" layout layout-align="center center">
 			<div flex="95" flex-sm="90" flex-md="90" class="titlepages">
-				<strong>POKEMONS</strong>
+				<div layout="row">
+				<strong>POKEMONS</strong><span ng-if="type" class=" type-{{type | lowercase}}" layout layout-align="center center">{{type}}</span>
+				</div>
 			</div>
 		</div>
 	</div>
