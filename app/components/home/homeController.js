@@ -2,9 +2,11 @@
     angular.module('homeController', [])
 
     .controller('homeController', [ 
-    '$scope',
-    function ($scope) {
+    '$scope', '$rootScope',
+    function ($scope, $rootScope) {
     	
-      
+    	$rootScope.titlepage = 'Pokefile | Home';
+        
     }]);
+
 })();
