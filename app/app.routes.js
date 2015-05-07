@@ -8,7 +8,7 @@
             templateUrl: 'templates/home/homeView.min.html',
             controller: 'homeController'
         }).when('/contact', {
-            templateUrl: 'templates/contact/contact.min.html',
+            templateUrl: 'templates/contact/contactView.min.html',
             controller: 'contactController'
         }).when('/pokemons', {
             templateUrl: 'templates/pokemons/pokemonsView.min.html',
